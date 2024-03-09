@@ -8,6 +8,7 @@ class Todo {
 
   final String text;
   final Priority priority;
+  
 }
 
 class Keys extends StatefulWidget {
