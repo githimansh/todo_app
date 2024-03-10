@@ -8,7 +8,6 @@ class Todo {
 
   final String text;
   final Priority priority;
-  
 }
 
 class Keys extends StatefulWidget {
@@ -72,6 +71,7 @@ class _KeysState extends State<Keys> {
               // for (final todo in _orderedTodos) TodoItem(todo.text, todo.priority),
               for (final todo in _orderedTodos)
                  CheckableTodoItem(
+                  key: ValueKey(todo.text),
                   todo.text,
                   todo.priority,
                 ),
